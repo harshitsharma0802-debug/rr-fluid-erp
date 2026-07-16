@@ -34,9 +34,9 @@ let email = document.getElementById("email").value;
 let password = document.getElementById("password").value;
 
 signInWithEmailAndPassword(auth,email,password)
-.then(()=>{
-    document.getElementById("message").innerHTML =
-    "Login Successful ✅";
+..then(()=>{
+    window.location.href = "dashboard.html";
+})
 })
 .catch((error)=>{
     document.getElementById("message").innerHTML =
