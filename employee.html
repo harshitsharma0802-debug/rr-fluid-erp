@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee Dashboard - RR Fluid Engineering</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f3f7ff;
+}
+
+.header{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h2{
+color:#0b3d91;
+}
+
+input,textarea,select{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:13px;
+background:#0b3d91;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>RR Fluid Engineering Pvt. Ltd.</h1>
+
+<h3>Employee Dashboard</h3>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+<h2>Attendance</h2>
+
+<label>Date</label>
+<input type="date">
+
+<label>Check In Time</label>
+<input type="time">
+
+<label>Check Out Time</label>
+<input type="time">
+
+<button>
+Submit Attendance
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Expense Entry</h2>
+
+
+<input type="text" placeholder="Employee Name">
+
+
+<input type="text" placeholder="Project / Site Name">
+
+
+<input type="number" placeholder="Wages Amount">
+
+
+<input type="number" placeholder="Food Expense">
+
+
+<input type="number" placeholder="Travel Expense">
+
+
+<input type="number" placeholder="Stay Expense">
+
+
+<input type="number" placeholder="Rent Expense">
+
+
+<textarea placeholder="Other Details"></textarea>
+
+
+<label>Upload Bill</label>
+
+<input type="file">
+
+
+<button>
+Submit Expense
+</button>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Status</h2>
+
+<p>
+Expense Approval: Pending
+</p>
+
+<p>
+Attendance: Submitted
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
