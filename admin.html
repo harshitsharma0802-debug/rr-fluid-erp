@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Admin Dashboard - RR Fluid Engineering</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f2f6ff;
+}
+
+.header{
+    background:#0b3d91;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h2{
+    color:#0b3d91;
+}
+
+button{
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td,th{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0b3d91;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>RR Fluid Engineering Pvt. Ltd.</h1>
+<h3>Admin Dashboard</h3>
+<p>Admin: Mr. Jagannath Ji</p>
+</div>
+
+
+<div class="container">
+
+
+<div class="card">
+<h2>Employee Management</h2>
+<p>Total Employees: 30</p>
+<button>View Employees</button>
+</div>
+
+
+<div class="card">
+<h2>Attendance</h2>
+<p>Check employee attendance and working hours.</p>
+<button>Open Attendance</button>
+</div>
+
+
+<div class="card">
+<h2>Expense Approval</h2>
+
+<table>
+
+<tr>
+<th>Employee</th>
+<th>Type</th>
+<th>Amount</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Employee 1</td>
+<td>Food</td>
+<td>₹500</td>
+<td>Pending</td>
+</tr>
+
+<tr>
+<td>Employee 2</td>
+<td>Stay</td>
+<td>₹1500</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+<br>
+
+<button>Approve Expenses</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>Reports</h2>
+
+<p>
+Salary | Wages | Rent | Food | Travel Reports
+</p>
+
+<button>Generate Report</button>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
