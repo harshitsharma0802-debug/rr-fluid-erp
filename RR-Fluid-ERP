@@ -1,0 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyDyTiqz01wQcPRe1ypTSa4KpO7kB-A2iiI",
+authDomain: "rr-fluid-erp.firebaseapp.com",
+projectId: "rr-fluid-erp",
+storageBucket: "rr-fluid-erp.firebasestorage.app",
+messagingSenderId: "214613992487",
+appId: "1:214613992487:web:7a1b302f0d093444fd1a02",
+measurementId: "G-5K38WV0ZDF"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
