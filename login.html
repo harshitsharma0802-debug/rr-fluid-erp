@@ -1,93 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - RR Fluid Engineering</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0b3d91,#00a2ff);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-}
-
-.box{
-background:white;
-padding:30px;
-border-radius:15px;
-width:320px;
-box-shadow:0 10px 20px rgba(0,0,0,.2);
-text-align:center;
-}
-
-img{
-width:120px;
-margin-bottom:15px;
-}
-
-h2{
-color:#0b3d91;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:8px;
-box-sizing:border-box;
-}
-
-button{
-width:100%;
-padding:12px;
-background:#0b3d91;
-color:white;
-border:none;
-border-radius:8px;
-font-size:16px;
-font-weight:bold;
-}
-
-button:hover{
-background:#062c6d;
-}
-
-p{
-font-size:13px;
-color:#666;
-}
-</style>
-
+    <title>RR Fluid ERP Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="box">
+    <h1>RR Fluid ERP</h1>
 
-<h2>RR Fluid Engineering</h2>
+    <input id="email" type="email" placeholder="Email">
+    <br><br>
 
-<p>Employee Login</p>
+    <input id="password" type="password" placeholder="Password">
+    <br><br>
 
-<input type="text" placeholder="Employee ID">
+    <button id="loginBtn">Login</button>
 
-<input type="password" placeholder="Password">
-
-<button onclick="login()">Login</button>
-
+    <p id="message"></p>
 </div>
 
-<script>
-function login(){
 
-alert("Login System Coming Next Step");
+<script type="module">
+import { auth } from "./firebase.js";
+import { signInWithEmailAndPassword } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+document.getElementById("loginBtn").onclick = function(){
+
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
+
+signInWithEmailAndPassword(auth,email,password)
+.then(()=>{
+    document.getElementById("message").innerHTML =
+    "Login Successful ✅";
+})
+.catch((error)=>{
+    document.getElementById("message").innerHTML =
+    error.message;
+});
 
 }
+
 </script>
 
 </body>
